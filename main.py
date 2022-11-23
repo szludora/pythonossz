@@ -2,40 +2,45 @@
 # Innen hívhatjuk az általunk megírt függvényeket
 
 import valtozok
-# kiírás,
-#valtozok.kiiras()
+import elagazasok
+import ciklusok
+import lista
+
+# ------------------------ VÁLTOZÓK -----------------------------
+# kiírás
+valtozok.kiiras()
 
 # változók használata, adattípusok
-#valtozok.kiiras_nev()
+valtozok.kiiras_nev()
 
 # műveletek szövegekkel
-#valtozok.muveletek_szovegekkel()
-#valtozok.muveletekszovegekkel2()
+valtozok.muveletek_szovegekkel()
+valtozok.muveletekszovegekkel2()
 
 # műveletek számokkal
-#valtozok.muveletek_szamokkal()
+valtozok.muveletek_szamokkal()
 
 # adatbekérés
-#valtozok.adatbekeres()
+valtozok.adatbekeres()
 
-#################################################################################################
-import elagazasok
+# -------------------------ELÁGAZÁSOK --------------------------------------
+
 # elágazások
-#elagazasok.egyszeru_elagazas()
+elagazasok.egyszeru_elagazas()
 # többszörös elágazások
-#elagazasok.tobbszoros_elagazas_paritas()
-#elagazasok.tobbszoros_elagazas_osztalyzat()
+elagazasok.tobbszoros_elagazas_paritas()
+elagazasok.tobbszoros_elagazas_osztalyzat()
 
 # feltételek, OR, AND, Logikai műveletek
-"""elagazasok.feltetelek_and()
-elagazasok.feltetelek_or()"""
+elagazasok.feltetelek_and()
+elagazasok.feltetelek_or()
 
 # egymásba ágyazott elágazások
-"""elagazasok.egymasbaagyazott()"""
+elagazasok.egymasbaagyazott()
 
 # KOMPLEX FELADAT
-"""elagazasok.pizza()
-elagazasok.pizza2()"""
+elagazasok.pizza()
+elagazasok.pizza2()
 """Készíts Pizza rendelő alkalmazást:
 A program kérje be, hogy sajtos, gombás, vagy sonkás pizzát kér-e? 
 Kérje be a pizza méretét: 
@@ -52,29 +57,29 @@ Kérje be, hogy feltét kell-e?
 Az extra feltét plusz 50 Ft-ba kerül. """
 
 
-#################################################################################################
-import ciklusok
+# ------------------------------------ CIKLUSOK -----------------------------------
+
 # ciklusok - while ciklus - számlálós ciklus
-"""ciklusok.szamlalos()"""
+ciklusok.szamlalos()
 # elöltesztelős ciklus - while - ellenőrzött adatbekérés
-"""ciklusok.ellenorzott_adatbekeres()
-ciklusok.adatbekeres()"""
+ciklusok.ellenorzott_adatbekeres()
+ciklusok.adatbekeres()
 
 # programozási tételek - számokon
-"""ciklusok.megszamlalas()
+ciklusok.megszamlalas()
 ciklusok.osszegzes()
 ciklusok.maximumkivalasztas()
 
-ciklusok.eldontes()"""
+ciklusok.eldontes()
 
 
-# egymásba ágyazott ciklusokű
-"""ciklusok.szorzotabla()"""
+# egymásba ágyazott ciklusok
+ciklusok.szorzotabla()
 
 
-#################################################################################################
+# ------------------------------------ LISTÁK ---------------------------------
 # listák
-import lista
+
 # listák bejárása
 lista.listabejaras()
 lista.lottoszamok()
@@ -102,7 +107,3 @@ lista.maximumkivalasztas_szoveg()
 
 #################################################################################################
 # osztályok használata
-
-
-
-

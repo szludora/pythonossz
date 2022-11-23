@@ -1,6 +1,6 @@
 def egyszeru_elagazas():
 
-    #adott egy szám, döntsük el róla, hogy páros, vagy páratlan?
+    # adott egy szám, döntsük el róla, hogy páros, vagy páratlan?
     # Milyen számokkal tesztelnéd a programod?
     szam = 12
     # tesztesetek
@@ -14,13 +14,14 @@ def egyszeru_elagazas():
 
     else:
         print(f"{szam} páratlan.")
-    #kérjünk be egy nevet és az illető nemét! Írjuk ki, hogy az adott nevű ember milyen nemű!
+    # kérjünk be egy nevet és az illető nemét! Írjuk ki, hogy az adott nevű ember milyen nemű!
     nev = input("A neved:")
     neme = input("A nemed (f/n):")
     if neme == "f":
         print(f"{nev} férfi.")
     else:
         print(f"{nev} nő.")
+
 
 def tobbszoros_elagazas_paritas():
     # adott egy szám, döntsük el róla, hogy pozitív, vagy negatív!
@@ -36,10 +37,11 @@ def tobbszoros_elagazas_paritas():
     szam = -12
     if szam > 0:
         print(f"{szam} pozitív.")
-    elif szam==0:
+    elif szam == 0:
         print(f"A szám  a  nulla.")
     else:
         print(f"{szam} negatív.")
+
 
 def tobbszoros_elagazas_osztalyzat():
     """: A program olvasson be a konzolról egy egész számot!
@@ -66,6 +68,7 @@ def tobbszoros_elagazas_osztalyzat():
     else:
         print(f"Hiba: érvénytelen százalék!")
 
+
 def feltetelek_and():
     """13.	Adj meg három egész számot egy-egy változóba, melyek egy sorozat első három elemét jelentik.
     Írd ki a „növekvő” szót, ha a három szám növekvő sorrendben áll, és a „csökkenő” szót, ha csökkenőben!"""
@@ -79,11 +82,12 @@ def feltetelek_and():
     #  65,54,43      |      Csökkenő sorrend
     #  34,23,56      |      Rendezetlen sorozat
     if szam1 < szam2 and szam2 < szam3:
-        print( f"{szam1}, {szam2}, {szam3} növekvő sorozat")
+        print(f"{szam1}, {szam2}, {szam3} növekvő sorozat")
     elif szam3 < szam2 and szam2 < szam1:
         print(f"{szam1}, {szam2}, {szam3} csökkenő sorozat")
     else:
         print(f"{szam1}, {szam2}, {szam3} rendezetlen sorozat")
+
 
 def feltetelek_or():
     """Kérj be egy egész számot, és írd ki, hogy osztható-e 3-mal vagy öttel!"""
@@ -95,8 +99,8 @@ def feltetelek_or():
     #  5             |      osztható 3-mal, vagy 5-tel
     #  6             |      nem osztható sem 3-mal, sem 5-tel
     #  15            |      osztható 3-mal, vagy 5-tel
-    if szam % 3 == 0 or  szam % 5 == 0:
-        print( f"{szam}, osztható 3-mal, vagy 5-tel")
+    if szam % 3 == 0 or szam % 5 == 0:
+        print(f"{szam}, osztható 3-mal, vagy 5-tel")
     else:
         print(f"{szam}, nem osztható sem 3-mal, sem 5-tel")
 
@@ -104,13 +108,13 @@ def feltetelek_or():
 def egymasbaagyazott():
     """"
     Egy házaspárnak két gyereke van.
-    A gyerek lehet édesgyerek, vagy mostoha, lány, vagy fiú. A program írja ki a négyféle lehetőséget a változók alapján:
+    A gyerek lehet édesgy., vagy mostoha, lány, vagy fiú. A program írja ki a négyféle lehetőséget a változók alapján:
      tipus : e - édes , m - mostoha
      nem : f - fiú, l - lány
     """
     tipus = "e"
     nem = "f"
-    #tesztesetek
+    # tesztesetek
     #     tipus |  nem  |  várt eredmény
     #       e   |   f   |   Saját fiúgyermek.
     #       e   |   l   |   Saját leánygyermek.
@@ -120,13 +124,13 @@ def egymasbaagyazott():
     #    bármi  |   l   |   A házastárs lánya.
     #       e   | bármi |   Saját leánygyermek.
     #       m   | bármi |   A házastárs lánya.
-    if ( nem == "f"):
-        if( tipus == "e"):
+    if nem == "f":
+        if tipus == "e":
             print(" Saját fiúgyermek.")
         else:
             print(" A házastárs fia.")
     else:
-        if (tipus == "e"):
+        if tipus == "e":
             print(" Saját leánygyermek.")
         else:
             print(" A házastárs lánya.")
@@ -158,10 +162,10 @@ def pizza():
 
     meret = input("A pizza mérete (k)icsi/(n)normál/(o)óriás k/n/o: ")
     meret = meret[0:1].lower()
-    feltet_kelle =  input("Kér extra feltétet? i/n: ")
+    feltet_kelle = input("Kér extra feltétet? i/n: ")
     feltet_kelle = feltet_kelle[0:1].lower()
 
-    szoveg= "A rendelt pizza: "
+    szoveg = "A rendelt pizza: "
     ar = 0
     if tipus == "1":
         ar = sajtos_alap_ar
@@ -179,7 +183,7 @@ def pizza():
     if meret == "k":
         ar *= 0.9
         szoveg += " Kicsi méretben, "
-    elif meret =="o":
+    elif meret == "o":
         ar *= 1.1
         szoveg += "Óriás méretben, "
     else:
@@ -189,10 +193,10 @@ def pizza():
         ar += 50
         szoveg += "extra feltéttel."
 
-    print(szoveg + " Fizetendő: " + str(ar) + " Ft." )
+    print(szoveg + " Fizetendő: " + str(ar) + " Ft.")
 
 
-### bontsuk metódusokra!
+# bontsuk metódusokra!
 def pizza2():
     """Készíts Pizza rendelő alkalmazást:
     A program kérje be, hogy sajtos, gombás, vagy sonkás pizzát kér-e?
@@ -227,11 +231,13 @@ def pizza2():
 def minta(jel, db):
     print(jel * db)
 
+
 def beker(szoveg):
     minta("*", 100)
     sz = input(szoveg)
 
     return sz[0:1].lower()
+
 
 def tipus_ar(tipus):
     # A változók kezdőértékének megadása - inicializálás *********************
@@ -248,6 +254,7 @@ def tipus_ar(tipus):
     else:
         ar = sonkas_alap_ar
     return ar
+
 
 def tipus_szoveg(tipus):
     szoveg = ""
@@ -269,6 +276,7 @@ def meret_ar(meret, ar):
         ar *= 1.1
     return ar
 
+
 def meret_szoveg(meret):
     szoveg = ""
     if meret == "k":
@@ -280,11 +288,13 @@ def meret_szoveg(meret):
 
     return szoveg
 
+
 def feltet_szoveg(feltet_kelle):
     szoveg = ""
     if feltet_kelle == "i":
         szoveg += "extra feltéttel. "
     return szoveg
+
 
 def feltet_ar(feltet_kelle):
     pluszar = 0

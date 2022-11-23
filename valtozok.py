@@ -1,3 +1,6 @@
+import math
+
+
 def kiiras():
     print("Az én nevem: Katalin")
 
@@ -11,20 +14,21 @@ def kiiras_nev():
     print(f"\t Magasságom: {magassag}")
     print(f"\t Férfi vagyok? : {ferfi}")
 
+
 def muveletek_szovegekkel():
-    szoveg="Az élet szép!"
-    szoveg2="Főleg, ha programozunk!"
+    szoveg = "Az élet szép!"
+    szoveg2 = "Főleg, ha programozunk!"
     szam = 2
-    szov= szoveg + szoveg2
-    print (szov)
-    ujszov= szov + str(szam) +" - ban."
+    szov = szoveg + szoveg2
+    print(szov)
+    ujszov = szov + str(szam) + " - ban."
     print(ujszov)
     print(szoveg[0:7])
     print(szoveg.upper())
     print(szoveg.title())
-    szam1 = "2"       #szövegként tárolt szám
+    szam1 = "2"       # szövegként tárolt szám
     szam2 = 3         # számként tárolt szám
-    #print(szam1 + szam2)        # hiba, mert két különböző típussal akarunk műveletet végrehajtani
+    # print(szam1 + szam2)        # hiba, mert két különböző típussal akarunk műveletet végrehajtani
     print(szam1 + str(szam2))   # szövegként fűzzük össze,  eredmény: "23"
     print(int(szam1) + szam2)   # számként adjuk össze,     eredmény: 5
 
@@ -42,18 +46,17 @@ def muveletekszovegekkel2():
     print(keresztnev)
     print(monogram1 + monogram2)
 
-import math
-def muveletek_szamokkal():
-    a = 12              #int
-    b = 24              #int
-    osszeg = a + b      #eredmény int
-    kulonbség = a-b     #eredmény int
-    hanyados = a / b    #eredmény float
-    szorzat = a * b     #eredmény int
-    hatvany = a ** 2    #eredmeny int
-    gyok = a ** 0.5     #eredmény float
-    gyok = math.sqrt(a) #eredmény float
 
+def muveletek_szamokkal():
+    a = 12              # int
+    b = 24              # int
+    osszeg = a + b      # eredmény int
+    kulonbseg = a-b     # eredmény int
+    hanyados = a / b    # eredmény float
+    szorzat = a * b     # eredmény int
+    hatvany = a ** 2    # eredmeny int
+    # gyok = a ** 0.5    eredmény float"""
+    gyok = math.sqrt(a)  # eredmény float
 
     a = 12.456
     egeszresz = a // 1  # // hányszor van meg benne egész számszor az osztó - int
@@ -62,6 +65,7 @@ def muveletek_szamokkal():
     print(f"{a} szám egészrésze: {egeszresz}, a tört rész 2 tizedesre kerekítve: {maradek:.2f}")
     print(f"{a} szám kettővel való osztási maradéka 3 tizedesre kerekítve: {parose:.3f}")
     print(f"{13 } szám kettővel való osztási maradéka: {13 % 2}")
+    print(osszeg, kulonbseg, hanyados, szorzat, hatvany, gyok)
 
 
 def adatbekeres():
